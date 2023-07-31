@@ -1,0 +1,53 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int start;
+		Scanner sc=new Scanner(System.in);
+		int a=-1;
+				   // start=sc.nextInt();
+
+		while(a<0)
+		{
+		     System.out.println("Enter a starting sistance(between 5 to 8 km)");
+		     start=sc.nextInt();
+		     if(start)
+		    {
+		        System.out.println(" Sorry, Choose between 5km to 8 km");
+
+		    }
+		    if(start >=5 && start<=8)
+		    {
+		        a=1;
+		        for(int i=start ;i>0 ;i--)
+		{
+		    if(i==start-2)
+		    {
+		        System.out.println("Good Start, Keep it up!");
+		        System.out.println("Distance to run:" + i);
+
+		        
+		    }
+		    else if(i<3 &&i>0 )
+		    {
+		         System.out.println("Distance to run:" +i);
+		         System.out.println(" Almost there");
+		    }
+		    else if (i==1)
+		    {
+		         System.out.println(i + "Done for the day");
+		    }
+		    else
+		    {
+		         System.out.println(i);
+		    }
+		    
+		}
+		
+		    }
+		    
+		    
+		}
+		
+	}
+}
